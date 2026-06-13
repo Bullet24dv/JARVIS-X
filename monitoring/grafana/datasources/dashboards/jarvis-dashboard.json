@@ -1,0 +1,12 @@
+{
+  "title": "JARVIS-X Dashboard",
+  "panels": [
+    {
+      "title": "Requests per second",
+      "type": "graph",
+      "targets": [
+        {"expr": "rate(http_requests_total[1m])"}
+      ]
+    }
+  ]
+}

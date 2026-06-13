@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+jarvis_env/
+*.egg-info/
+dist/
+build/
+
+# Base de datos
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Archivos temporales
+/tmp/jarvis/
+*.tmp
+*.bak
+*.swp
+
+# Variables de entorno
+.env.local
+.env.production
+
+# Claves y tokens
+*.key
+*.pem
+token*.json
+
+# Modelos descargados
+models/
+data/models/
+*.onnx
+*.bin
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+
+# Frontend
+frontend/web/dist/

@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #0a0a2a, #000000);
+    color: cyan;
+    font-family: 'Segoe UI', sans-serif;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.hologram {
+    height: 200px;
+    background: radial-gradient(circle, rgba(0,255,255,0.2) 0%, rgba(0,0,0,0) 70%);
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { opacity: 0.5; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+    100% { opacity: 0.5; transform: scale(1); }
+}
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.messages {
+    flex: 1;
+    overflow-y: auto;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    padding: 10px;
+}
+.input-area {
+    display: flex;
+    margin-top: 10px;
+}
+input {
+    flex: 1;
+    padding: 10px;
+    background: #1a1a2e;
+    border: 1px solid cyan;
+    color: white;
+    border-radius: 5px;
+}
+button {
+    background: cyan;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
