@@ -1,108 +1,218 @@
+# ============================================================
+# JARVIS-X | backend/main.py
+# Punto de entrada del servidor FastAPI
+# ============================================================
+
 import asyncio
 import logging
+import sys
+import time
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from pathlib import Path
+from typing import AsyncGenerator
+
+import uvicorn
+from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import JSONResponse
-from prometheus_fastapi_instrumentator import Instrumentator
-from loguru import logger
+from fastapi.staticfiles import StaticFiles
 
 from backend.config import settings
-from backend.api.v1.router import api_router
-from backend.api.v1.websockets.manager import websocket_manager
-from backend.core.event_bus import event_bus
-from backend.core.task_queue import task_queue
-from backend.services.llm_service import LLMService
-from backend.services.voice_service import VoiceService
-from backend.services.vision_service import VisionService
-from backend.services.mcp_service import MCPService
-from backend.services.agent_service import AgentService
-from backend.models.database import init_db
+from backend.core.database import init_db, close_db
+from backend.core.cache import init_cache, close_cache
+from backend.core.memory.manager import MemoryManager
+from backend.core.llm_router import LLMRouter
+from backend.core.agents.orchestrator import AgentOrchestrator
+from backend.core.websocket_manager import WebSocketManager
+from backend.core.voice.pipeline import VoicePipeline
+from backend.api.v1 import router as api_v1_router
+from backend.api.ws import router as ws_router
 
-# Configurar logging
-logger.add(settings.log_file, rotation="1 day", retention="7 days", level=settings.log_level)
+# ── Logging ───────────────────────────────────────────────────
+Path("logs").mkdir(exist_ok=True)
+logging.basicConfig(
+    level=getattr(logging, settings.LOG_LEVEL),
+    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler(settings.LOG_FILE, encoding="utf-8"),
+    ],
+)
+logger = logging.getLogger("jarvis.main")
+
+# ── Instancias globales ───────────────────────────────────────
+ws_manager = WebSocketManager()
+memory_manager: MemoryManager | None = None
+llm_router: LLMRouter | None = None
+orchestrator: AgentOrchestrator | None = None
+voice_pipeline: VoicePipeline | None = None
+
 
 @asynccontextmanager
-async def lifespan(app: FastAPI):
-    # Startup
-    logger.info("Starting JARVIS-X backend...")
-    await init_db()
-    await task_queue.start()
-    await event_bus.start()
-    
-    # Initialize core services
-    app.state.llm_service = LLMService()
-    await app.state.llm_service.initialize()
-    # app.state.voice_service = VoiceService()
-    # await app.state.voice_service.start_listening()
-    app.state.vision_service = VisionService()
-    await app.state.vision_service.initialize()
-    app.state.mcp_service = MCPService()
-    await app.state.mcp_service.connect_all()
-    app.state.agent_service = AgentService()
-    await app.state.agent_service.initialize()
-    
-    logger.info("JARVIS-X ready.")
-    yield
-    # Shutdown
-    logger.info("Shutting down...")
-    # await app.state.voice_service.stop()
-    await task_queue.stop()
-    await event_bus.stop()
-    await app.state.mcp_service.disconnect_all()
+async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
+    """Ciclo de vida completo de la aplicación."""
+    global memory_manager, llm_router, orchestrator, voice_pipeline
 
+    logger.info("╔══════════════════════════════════════════╗")
+    logger.info("║   JARVIS-X  Sistema Operativo IA v2.0   ║")
+    logger.info("╚══════════════════════════════════════════╝")
+    logger.info("Iniciando subsistemas...")
+
+    # Asegurar directorios
+    for d in ["data", "data/chroma", "data/starcars/photos", "data/starcars/output",
+              "logs", "models", "uploads"]:
+        Path(d).mkdir(parents=True, exist_ok=True)
+
+    # Base de datos
+    logger.info("[1/6] Inicializando bases de datos...")
+    await init_db()
+
+    # Cache Redis
+    logger.info("[2/6] Conectando a Redis...")
+    await init_cache()
+
+    # Memoria
+    logger.info("[3/6] Cargando sistema de memoria...")
+    memory_manager = MemoryManager()
+    await memory_manager.initialize()
+    app.state.memory = memory_manager
+
+    # Router LLM
+    logger.info("[4/6] Configurando router de modelos IA...")
+    llm_router = LLMRouter()
+    await llm_router.initialize()
+    app.state.llm = llm_router
+
+    # Orquestador de agentes
+    logger.info("[5/6] Iniciando orquestador multiagente...")
+    orchestrator = AgentOrchestrator(llm_router=llm_router, memory=memory_manager)
+    await orchestrator.initialize()
+    app.state.orchestrator = orchestrator
+
+    # Pipeline de voz (opcional, no bloquea)
+    logger.info("[6/6] Preparando pipeline de voz...")
+    try:
+        voice_pipeline = VoicePipeline()
+        await voice_pipeline.initialize()
+        app.state.voice = voice_pipeline
+    except Exception as e:
+        logger.warning(f"Pipeline de voz no disponible: {e}. Sistema continúa sin voz.")
+        app.state.voice = None
+
+    # WebSocket manager
+    app.state.ws_manager = ws_manager
+
+    logger.info("✅ JARVIS-X listo. Escuchando en http://{}:{}".format(settings.HOST, settings.PORT))
+    logger.info("Diga 'Jarvis' para activar el asistente.")
+
+    yield
+
+    # ── Shutdown ─────────────────────────────────────────────
+    logger.info("Apagando JARVIS-X...")
+    if voice_pipeline:
+        await voice_pipeline.shutdown()
+    if orchestrator:
+        await orchestrator.shutdown()
+    await close_cache()
+    await close_db()
+    logger.info("Sistema apagado correctamente.")
+
+
+# ── Aplicación FastAPI ────────────────────────────────────────
 app = FastAPI(
     title="JARVIS-X API",
-    version="1.0.0",
+    description="Sistema Operativo de IA Personal",
+    version=settings.APP_VERSION,
+    docs_url="/docs" if settings.DEBUG else None,
+    redoc_url="/redoc" if settings.DEBUG else None,
     lifespan=lifespan,
-    docs_url="/docs",
-    redoc_url="/redoc"
 )
 
-# CORS
+# ── Middlewares ───────────────────────────────────────────────
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=settings.ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+app.add_middleware(GZipMiddleware, minimum_size=1000)
 
-# Metrics
-Instrumentator().instrument(app).expose(app)
 
-# Router
-app.include_router(api_router, prefix="/api/v1")
+@app.middleware("http")
+async def add_process_time(request: Request, call_next):
+    start = time.perf_counter()
+    response = await call_next(request)
+    elapsed = (time.perf_counter() - start) * 1000
+    response.headers["X-Process-Time"] = f"{elapsed:.2f}ms"
+    return response
 
-@app.get("/")
+
+@app.middleware("http")
+async def security_headers(request: Request, call_next):
+    response = await call_next(request)
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["X-Frame-Options"] = "DENY"
+    response.headers["X-XSS-Protection"] = "1; mode=block"
+    return response
+
+
+# ── Routers ───────────────────────────────────────────────────
+app.include_router(api_v1_router, prefix="/api/v1")
+app.include_router(ws_router, prefix="/ws")
+
+# Archivos estáticos (frontend compilado)
+frontend_dist = Path("frontend/dist")
+if frontend_dist.exists():
+    app.mount("/", StaticFiles(directory=str(frontend_dist), html=True), name="frontend")
+
+
+# ── Endpoints de sistema ──────────────────────────────────────
+@app.get("/health", tags=["sistema"])
+async def health_check():
+    """Estado de salud del sistema."""
+    return {
+        "status": "operational",
+        "version": settings.APP_VERSION,
+        "name": "JARVIS-X",
+        "subsystems": {
+            "llm": llm_router.get_status() if llm_router else "offline",
+            "memory": "online" if memory_manager else "offline",
+            "agents": orchestrator.get_status() if orchestrator else "offline",
+            "voice": "online" if voice_pipeline and voice_pipeline.is_ready else "offline",
+        },
+    }
+
+
+@app.get("/", tags=["sistema"])
 async def root():
-    return {"message": "JARVIS-X Operational", "status": "online", "version": "1.0.0"}
+    return {
+        "message": "JARVIS-X, su asistente personal.",
+        "version": settings.APP_VERSION,
+        "docs": "/docs",
+    }
 
-@app.websocket("/ws/public")
-async def websocket_public_endpoint(websocket: WebSocket):
-    """WebSocket público sin autenticación para pruebas"""
-    logger.info("Public WebSocket connection attempt...")
-    await websocket.accept()
-    logger.info("Public WebSocket accepted")
-    await websocket.send_json({"type": "connected", "message": "Connected to JARVIS-X Public"})
-    try:
-        while True:
-            data = await websocket.receive_json()
-            logger.info(f"Received: {data}")
-            # Echo para pruebas
-            await websocket.send_json({"type": "echo", "data": data})
-    except WebSocketDisconnect:
-        logger.info("Public WebSocket disconnected")
-    except Exception as e:
-        logger.error(f"Public WebSocket error: {e}")
 
-@app.get("/health")
-async def health():
-    return {"status": "healthy", "services": {
-        "database": "ok",
-        "redis": "ok",
-        "rabbitmq": "ok"
-    }}
-@app.get("/ping")
-async def ping():
-    return {"ping": "pong"}
+@app.exception_handler(Exception)
+async def global_exception_handler(request: Request, exc: Exception):
+    logger.error(f"Error no controlado: {exc}", exc_info=True)
+    return JSONResponse(
+        status_code=500,
+        content={"detail": "Error interno del sistema. JARVIS está trabajando en ello."},
+    )
+
+
+# ── Punto de entrada ─────────────────────────────────────────
+if __name__ == "__main__":
+    uvicorn.run(
+        "backend.main:app",
+        host=settings.HOST,
+        port=settings.PORT,
+        workers=1,  # 1 worker para WebSockets con estado compartido
+        reload=settings.RELOAD,
+        log_level=settings.LOG_LEVEL.lower(),
+        access_log=settings.DEBUG,
+        ws_ping_interval=20,
+        ws_ping_timeout=10,
+    )
