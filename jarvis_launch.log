@@ -1,0 +1,126 @@
+[2026-06-13 13:22:44] [INFO] Iniciando JARVIS-X...
+[2026-06-13 13:22:44] [INFO] Iniciando backend JARVIS-X...
+[2026-06-13 13:22:44] [WARN] El puerto 8000 ya está en uso. Intentando liberar...
+[2026-06-13 13:22:44] [WARN] Matando proceso con PID 26056 en puerto 8000
+[2026-06-13 13:22:46] [WARN] Matando proceso con PID 26056 en puerto 8000
+[2026-06-13 13:22:47] [WARN] Matando proceso con PID 29052 en puerto 8000
+[2026-06-13 13:22:50] [INFO] Esperando a que el backend esté disponible...
+[2026-06-13 13:22:50] [INFO] [BACKEND] INFO:     Will watch for changes in these directories: ['C:\\Users\\Matias\\OneDrive\\Desktop\\JARVIS-X']
+[2026-06-13 13:22:51] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:22:52] [INFO] [BACKEND] C:\Users\Matias\OneDrive\Desktop\JARVIS-X\backend\core\llm_providers\gemini.py:2: FutureWarning:
+[2026-06-13 13:22:52] [INFO] [BACKEND] 
+[2026-06-13 13:22:52] [INFO] [BACKEND] All support for the `google.generativeai` package has ended. It will no longer be receiving
+[2026-06-13 13:22:52] [INFO] [BACKEND] updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+[2026-06-13 13:22:52] [INFO] [BACKEND] See README for more details:
+[2026-06-13 13:22:52] [INFO] [BACKEND] 
+[2026-06-13 13:22:52] [INFO] [BACKEND] https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+[2026-06-13 13:22:52] [INFO] [BACKEND] 
+[2026-06-13 13:22:52] [INFO] [BACKEND] import google.generativeai as genai
+[2026-06-13 13:22:52] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:22:52] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:22:52] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:22:52] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:22:52] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:22:52] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:22:52] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:22:59] [INFO] [BACKEND] C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[2026-06-13 13:22:59] [INFO] [BACKEND] import pkg_resources
+[2026-06-13 13:23:00] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:23:00] [INFO] [BACKEND] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-06-13 13:23:02] [INFO] [BACKEND] 
+[2026-06-13 13:23:02] [INFO] [BACKEND] Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+[2026-06-13 13:23:02] [INFO] [BACKEND] Loading weights: 100%|##########| 199/199 [00:00<00:00, 10749.50it/s]
+[2026-06-13 13:23:05] [INFO] [BACKEND] 2026-06-13 13:23:05.422 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+[2026-06-13 13:23:05] [INFO] [BACKEND] INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2026-06-13 13:23:05] [INFO] [BACKEND] INFO:     Started reloader process [15068] using WatchFiles
+[2026-06-13 13:23:05] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:23:06] [INFO] [BACKEND] C:\Users\Matias\OneDrive\Desktop\JARVIS-X\backend\core\llm_providers\gemini.py:2: FutureWarning:
+[2026-06-13 13:23:06] [INFO] [BACKEND] 
+[2026-06-13 13:23:06] [INFO] [BACKEND] All support for the `google.generativeai` package has ended. It will no longer be receiving
+[2026-06-13 13:23:06] [INFO] [BACKEND] updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+[2026-06-13 13:23:06] [INFO] [BACKEND] See README for more details:
+[2026-06-13 13:23:06] [INFO] [BACKEND] 
+[2026-06-13 13:23:06] [INFO] [BACKEND] https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+[2026-06-13 13:23:06] [INFO] [BACKEND] 
+[2026-06-13 13:23:06] [INFO] [BACKEND] import google.generativeai as genai
+[2026-06-13 13:23:07] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:23:07] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:23:07] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:23:07] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:23:07] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:23:07] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:23:07] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:23:14] [INFO] [BACKEND] C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\webrtcvad.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[2026-06-13 13:23:14] [INFO] [BACKEND] import pkg_resources
+[2026-06-13 13:23:14] [INFO] [BACKEND] python-dotenv could not parse statement starting at line 7
+[2026-06-13 13:23:16] [INFO] [BACKEND] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-06-13 13:23:16] [INFO] [BACKEND] 
+[2026-06-13 13:23:16] [INFO] [BACKEND] Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+[2026-06-13 13:23:16] [INFO] [BACKEND] Loading weights: 100%|##########| 199/199 [00:00<00:00, 11159.69it/s]
+[2026-06-13 13:23:19] [INFO] [BACKEND] 2026-06-13 13:23:19.966 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+[2026-06-13 13:23:19] [INFO] [BACKEND] INFO:     Started server process [29464]
+[2026-06-13 13:23:19] [INFO] [BACKEND] INFO:     Waiting for application startup.
+[2026-06-13 13:23:19] [INFO] [BACKEND] 2026-06-13 13:23:19.989 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+[2026-06-13 13:23:50] [INFO] [BACKEND] 2026-06-13 13:23:50.463 | ERROR    | backend.models.database:init_db:32 - Failed to connect to MongoDB: localhost:27017: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a2d9207582815764c365a07, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2026-06-13 13:23:50] [INFO] [BACKEND] ERROR:    Traceback (most recent call last):
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\starlette\routing.py", line 638, in lifespan
+[2026-06-13 13:23:50] [INFO] [BACKEND] async with self.lifespan_context(app) as maybe_state:
+[2026-06-13 13:23:50] [INFO] [BACKEND] ~~~~~~~~~~~~~~~~~~~~~^^^^^
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 214, in __aenter__
+[2026-06-13 13:23:50] [INFO] [BACKEND] return await anext(self.gen)
+[2026-06-13 13:23:50] [INFO] [BACKEND] ^^^^^^^^^^^^^^^^^^^^^
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+[2026-06-13 13:23:50] [INFO] [BACKEND] async with original_context(app) as maybe_original_state:
+[2026-06-13 13:23:50] [INFO] [BACKEND] ~~~~~~~~~~~~~~~~^^^^^
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 214, in __aenter__
+[2026-06-13 13:23:50] [INFO] [BACKEND] return await anext(self.gen)
+[2026-06-13 13:23:50] [INFO] [BACKEND] ^^^^^^^^^^^^^^^^^^^^^
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\backend\main.py", line 29, in lifespan
+[2026-06-13 13:23:50] [INFO] [BACKEND] await init_db()
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\backend\models\database.py", line 21, in init_db
+[2026-06-13 13:23:50] [INFO] [BACKEND] await db.users.create_index("username", unique=True)
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+[2026-06-13 13:23:50] [INFO] [BACKEND] result = self.fn(*self.args, **self.kwargs)
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\pymongo\synchronous\collection.py", line 2337, in create_index
+[2026-06-13 13:23:50] [INFO] [BACKEND] return (self._create_indexes([index], session, **cmd_options))[0]
+[2026-06-13 13:23:50] [INFO] [BACKEND] ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\pymongo\_csot.py", line 120, in csot_wrapper
+[2026-06-13 13:23:50] [INFO] [BACKEND] return func(self, *args, **kwargs)
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\pymongo\synchronous\collection.py", line 2190, in _create_indexes
+[2026-06-13 13:23:50] [INFO] [BACKEND] with self._conn_for_writes(session, operation=_Op.CREATE_INDEXES) as conn:
+[2026-06-13 13:23:50] [INFO] [BACKEND] ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\pymongo\synchronous\collection.py", line 557, in _conn_for_writes
+[2026-06-13 13:23:50] [INFO] [BACKEND] return self._database.client._conn_for_writes(session, operation)
+[2026-06-13 13:23:50] [INFO] [BACKEND] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1666, in _conn_for_writes
+[2026-06-13 13:23:50] [INFO] [BACKEND] server = self._select_server(writable_server_selector, session, operation)
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1649, in _select_server
+[2026-06-13 13:23:50] [INFO] [BACKEND] server = topology.select_server(
+[2026-06-13 13:23:50] [INFO] [BACKEND] server_selector,
+[2026-06-13 13:23:50] [INFO] [BACKEND] ...<2 lines>...
+[2026-06-13 13:23:50] [INFO] [BACKEND] operation_id=operation_id,
+[2026-06-13 13:23:50] [INFO] [BACKEND] )
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\pymongo\synchronous\topology.py", line 398, in select_server
+[2026-06-13 13:23:50] [INFO] [BACKEND] server = self._select_server(
+[2026-06-13 13:23:50] [INFO] [BACKEND] selector,
+[2026-06-13 13:23:50] [INFO] [BACKEND] ...<4 lines>...
+[2026-06-13 13:23:50] [INFO] [BACKEND] operation_id=operation_id,
+[2026-06-13 13:23:50] [INFO] [BACKEND] )
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\pymongo\synchronous\topology.py", line 376, in _select_server
+[2026-06-13 13:23:50] [INFO] [BACKEND] servers = self.select_servers(
+[2026-06-13 13:23:50] [INFO] [BACKEND] selector, operation, server_selection_timeout, address, operation_id
+[2026-06-13 13:23:50] [INFO] [BACKEND] )
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\pymongo\synchronous\topology.py", line 283, in select_servers
+[2026-06-13 13:23:50] [INFO] [BACKEND] server_descriptions = self._select_servers_loop(
+[2026-06-13 13:23:50] [INFO] [BACKEND] selector, server_timeout, operation, operation_id, address
+[2026-06-13 13:23:50] [INFO] [BACKEND] )
+[2026-06-13 13:23:50] [INFO] [BACKEND] File "C:\Users\Matias\OneDrive\Desktop\JARVIS-X\jarvis_env\Lib\site-packages\pymongo\synchronous\topology.py", line 333, in _select_servers_loop
+[2026-06-13 13:23:50] [INFO] [BACKEND] raise ServerSelectionTimeoutError(
+[2026-06-13 13:23:50] [INFO] [BACKEND] f"{self._error_message(selector)}, Timeout: {timeout}s, Topology Description: {self.description!r}"
+[2026-06-13 13:23:50] [INFO] [BACKEND] )
+[2026-06-13 13:23:50] [INFO] [BACKEND] pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a2d9207582815764c365a07, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2026-06-13 13:23:50] [INFO] [BACKEND] 
+[2026-06-13 13:23:50] [INFO] [BACKEND] ERROR:    Application startup failed. Exiting.
+[2026-06-13 13:24:07] [INFO] [BACKEND] INFO:     Stopping reloader process [15068]
+[2026-06-13 13:24:08] [WARN] Deteniendo todos los procesos...
+[2026-06-13 13:24:08] [INFO] Terminando backend (PID 10120)

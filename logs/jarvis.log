@@ -1,0 +1,400 @@
+2026-06-13 03:28:55.360 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:28:55.401 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:28:55.401 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:28:55.401 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:28:57.706 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:28:57.719 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:28:57.719 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:28:57.856 | INFO     | backend.services.voice_service:start_listening:35 - Voice service listening...
+2026-06-13 03:29:03.305 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:31:18.836 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:31:18.852 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:31:18.852 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:31:18.852 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:31:21.121 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:31:21.123 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:31:21.123 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:31:21.147 | INFO     | backend.services.voice_service:start_listening:35 - Voice service listening...
+2026-06-13 03:31:22.370 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:31:23.323 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:31:24.003 | INFO     | backend.services.voice_service:_process_audio_loop:48 - Wake word detected!
+2026-06-13 03:31:26.422 | INFO     | backend.services.voice_service:_process_audio_loop:48 - Wake word detected!
+2026-06-13 03:33:30.843 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:33:30.860 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:33:30.861 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:33:30.861 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:33:33.175 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:33:33.187 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:33:33.187 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:33:33.221 | INFO     | backend.services.voice_service:start_listening:35 - Voice service listening...
+2026-06-13 03:33:34.463 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:33:35.426 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:33:35.558 | INFO     | backend.services.voice_service:_process_audio_loop:48 - Wake word detected!
+2026-06-13 03:36:34.870 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:36:34.887 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:36:34.887 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:36:34.888 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:36:37.170 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:36:37.184 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:36:37.185 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:36:37.213 | INFO     | backend.services.voice_service:start_listening:35 - Voice service listening...
+2026-06-13 03:36:38.442 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:36:39.412 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:36:39.506 | INFO     | backend.services.voice_service:_process_audio_loop:48 - Wake word detected!
+2026-06-13 03:40:33.729 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:40:33.747 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:40:33.747 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:40:33.747 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:40:36.041 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:40:36.051 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:40:36.051 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:40:36.076 | INFO     | backend.services.voice_service:start_listening:35 - Voice service listening...
+2026-06-13 03:40:37.280 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:40:38.240 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:40:38.379 | INFO     | backend.services.voice_service:_process_audio_loop:48 - Wake word detected!
+2026-06-13 03:42:06.313 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:42:06.352 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:42:06.352 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:42:06.353 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:42:06.703 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:42:06.736 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:42:06.736 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:42:06.736 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:42:08.659 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:42:08.661 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:42:08.661 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:42:08.685 | INFO     | backend.services.voice_service:start_listening:35 - Voice service listening...
+2026-06-13 03:42:09.015 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:42:09.017 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:42:09.018 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:42:09.029 | INFO     | backend.services.voice_service:start_listening:35 - Voice service listening...
+2026-06-13 03:42:09.985 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:42:10.390 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:42:10.941 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:42:10.941 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 03:42:10.967 | INFO     | backend.core.mcp.connectors.postgresql:connect:27 - PostgreSQL connected successfully
+2026-06-13 03:42:10.968 | INFO     | backend.core.mcp.connectors.local_fs:connect:14 - LocalFS connector ready
+2026-06-13 03:42:10.968 | INFO     | backend.core.mcp.mcp_server:connect_all:68 - MCP Server initialized with 2 connectors
+2026-06-13 03:42:11.601 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:42:11.601 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 03:42:11.624 | INFO     | backend.core.mcp.connectors.postgresql:connect:27 - PostgreSQL connected successfully
+2026-06-13 03:42:11.625 | INFO     | backend.core.mcp.connectors.local_fs:connect:14 - LocalFS connector ready
+2026-06-13 03:42:11.625 | INFO     | backend.core.mcp.mcp_server:connect_all:68 - MCP Server initialized with 2 connectors
+2026-06-13 03:42:13.058 | INFO     | backend.services.voice_service:_process_audio_loop:48 - Wake word detected!
+2026-06-13 03:42:13.264 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:42:13.271 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:42:13.272 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:42:13.731 | INFO     | backend.services.voice_service:_process_audio_loop:48 - Wake word detected!
+2026-06-13 03:42:13.904 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:42:13.909 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:42:13.909 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:42:17.354 | WARNING  | backend.services.voice_service:_audio_callback:39 - Audio status: input overflow
+2026-06-13 03:42:17.471 | WARNING  | backend.services.voice_service:_audio_callback:39 - Audio status: input overflow
+2026-06-13 03:42:18.058 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+2026-06-13 03:42:18.177 | WARNING  | backend.services.voice_service:_audio_callback:39 - Audio status: input overflow
+2026-06-13 03:42:18.280 | WARNING  | backend.services.voice_service:_audio_callback:39 - Audio status: input overflow
+2026-06-13 03:42:18.807 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+2026-06-13 03:42:19.287 | INFO     | backend.core.agents.orchestrator:initialize:51 - Agent orchestrator initialized with 10 agents
+2026-06-13 03:42:19.287 | INFO     | backend.main:lifespan:45 - JARVIS-X ready.
+2026-06-13 03:42:20.124 | INFO     | backend.core.agents.orchestrator:initialize:51 - Agent orchestrator initialized with 10 agents
+2026-06-13 03:42:20.124 | INFO     | backend.main:lifespan:45 - JARVIS-X ready.
+2026-06-13 03:42:20.357 | INFO     | backend.services.voice_service:_process_audio_loop:48 - Wake word detected!
+2026-06-13 03:43:19.150 | INFO     | backend.main:lifespan:48 - Shutting down...
+2026-06-13 03:43:19.171 | INFO     | backend.core.event_bus:stop:18 - Event bus stopped
+2026-06-13 03:43:19.174 | INFO     | backend.core.mcp.connectors.postgresql:disconnect:48 - PostgreSQL disconnected
+2026-06-13 03:44:00.151 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:44:00.170 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:44:00.170 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:44:00.170 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:44:02.470 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:44:02.481 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:44:02.481 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:44:02.495 | INFO     | backend.services.voice_service:start_listening:35 - Voice service listening...
+2026-06-13 03:44:03.679 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:44:04.712 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:44:04.712 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 03:44:04.735 | INFO     | backend.core.mcp.connectors.postgresql:connect:27 - PostgreSQL connected successfully
+2026-06-13 03:44:04.736 | INFO     | backend.core.mcp.connectors.local_fs:connect:14 - LocalFS connector ready
+2026-06-13 03:44:04.736 | INFO     | backend.core.mcp.mcp_server:connect_all:68 - MCP Server initialized with 2 connectors
+2026-06-13 03:44:06.820 | INFO     | backend.services.voice_service:_process_audio_loop:48 - Wake word detected!
+2026-06-13 03:44:07.019 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:44:07.021 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:44:07.021 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:44:10.947 | WARNING  | backend.services.voice_service:_audio_callback:39 - Audio status: input overflow
+2026-06-13 03:44:11.062 | WARNING  | backend.services.voice_service:_audio_callback:39 - Audio status: input overflow
+2026-06-13 03:44:11.577 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+2026-06-13 03:44:12.750 | INFO     | backend.core.agents.orchestrator:initialize:51 - Agent orchestrator initialized with 10 agents
+2026-06-13 03:44:12.750 | INFO     | backend.main:lifespan:45 - JARVIS-X ready.
+2026-06-13 03:49:34.706 | INFO     | backend.main:lifespan:48 - Shutting down...
+2026-06-13 03:49:34.706 | INFO     | backend.main:lifespan:48 - Shutting down...
+2026-06-13 03:49:34.721 | INFO     | backend.core.event_bus:stop:18 - Event bus stopped
+2026-06-13 03:49:34.722 | INFO     | backend.core.mcp.connectors.postgresql:disconnect:48 - PostgreSQL disconnected
+2026-06-13 03:49:34.771 | INFO     | backend.core.event_bus:stop:18 - Event bus stopped
+2026-06-13 03:49:34.771 | INFO     | backend.core.mcp.connectors.postgresql:disconnect:48 - PostgreSQL disconnected
+2026-06-13 03:49:54.737 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:49:54.769 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:49:54.770 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:49:54.770 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:49:54.831 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:49:54.846 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:49:54.847 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:49:54.847 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:49:57.074 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:49:57.081 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:49:57.081 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:49:57.131 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:49:57.132 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:49:57.133 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:49:58.302 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:49:58.370 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:49:59.275 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:49:59.275 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 03:49:59.298 | INFO     | backend.core.mcp.connectors.postgresql:connect:27 - PostgreSQL connected successfully
+2026-06-13 03:49:59.299 | INFO     | backend.core.mcp.connectors.local_fs:connect:14 - LocalFS connector ready
+2026-06-13 03:49:59.299 | INFO     | backend.core.mcp.mcp_server:connect_all:68 - MCP Server initialized with 2 connectors
+2026-06-13 03:49:59.328 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:49:59.328 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 03:49:59.351 | INFO     | backend.core.mcp.connectors.postgresql:connect:27 - PostgreSQL connected successfully
+2026-06-13 03:49:59.351 | INFO     | backend.core.mcp.connectors.local_fs:connect:14 - LocalFS connector ready
+2026-06-13 03:49:59.352 | INFO     | backend.core.mcp.mcp_server:connect_all:68 - MCP Server initialized with 2 connectors
+2026-06-13 03:50:01.598 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:50:01.604 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:50:01.606 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:50:01.637 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:50:01.639 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:50:01.639 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:50:06.171 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+2026-06-13 03:50:06.179 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+2026-06-13 03:50:07.428 | INFO     | backend.core.agents.orchestrator:initialize:51 - Agent orchestrator initialized with 10 agents
+2026-06-13 03:50:07.429 | INFO     | backend.main:lifespan:45 - JARVIS-X ready.
+2026-06-13 03:50:07.455 | INFO     | backend.core.agents.orchestrator:initialize:51 - Agent orchestrator initialized with 10 agents
+2026-06-13 03:50:07.455 | INFO     | backend.main:lifespan:45 - JARVIS-X ready.
+2026-06-13 03:51:23.691 | INFO     | backend.main:lifespan:48 - Shutting down...
+2026-06-13 03:51:23.692 | INFO     | backend.core.event_bus:stop:18 - Event bus stopped
+2026-06-13 03:51:23.694 | INFO     | backend.core.mcp.connectors.postgresql:disconnect:48 - PostgreSQL disconnected
+2026-06-13 03:51:23.750 | INFO     | backend.main:lifespan:48 - Shutting down...
+2026-06-13 03:51:23.751 | INFO     | backend.core.event_bus:stop:18 - Event bus stopped
+2026-06-13 03:51:23.753 | INFO     | backend.core.mcp.connectors.postgresql:disconnect:48 - PostgreSQL disconnected
+2026-06-13 03:51:40.421 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:51:40.459 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:51:40.460 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:51:40.460 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:51:40.510 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:51:40.526 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:51:40.526 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:51:40.526 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:51:42.744 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:51:42.746 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:51:42.746 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:51:42.792 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:51:42.794 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:51:42.795 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:51:44.000 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:51:44.063 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:51:44.949 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:51:44.949 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 03:51:44.973 | INFO     | backend.core.mcp.connectors.postgresql:connect:27 - PostgreSQL connected successfully
+2026-06-13 03:51:44.973 | INFO     | backend.core.mcp.connectors.local_fs:connect:14 - LocalFS connector ready
+2026-06-13 03:51:44.973 | INFO     | backend.core.mcp.mcp_server:connect_all:68 - MCP Server initialized with 2 connectors
+2026-06-13 03:51:45.030 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:51:45.031 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 03:51:45.054 | INFO     | backend.core.mcp.connectors.postgresql:connect:27 - PostgreSQL connected successfully
+2026-06-13 03:51:45.054 | INFO     | backend.core.mcp.connectors.local_fs:connect:14 - LocalFS connector ready
+2026-06-13 03:51:45.055 | INFO     | backend.core.mcp.mcp_server:connect_all:68 - MCP Server initialized with 2 connectors
+2026-06-13 03:51:47.250 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:51:47.257 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:51:47.257 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:51:47.337 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:51:47.339 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:51:47.340 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:51:51.932 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+2026-06-13 03:51:52.041 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+2026-06-13 03:51:53.948 | INFO     | backend.core.agents.orchestrator:initialize:51 - Agent orchestrator initialized with 10 agents
+2026-06-13 03:51:53.949 | INFO     | backend.main:lifespan:45 - JARVIS-X ready.
+2026-06-13 03:51:54.126 | INFO     | backend.core.agents.orchestrator:initialize:51 - Agent orchestrator initialized with 10 agents
+2026-06-13 03:51:54.126 | INFO     | backend.main:lifespan:45 - JARVIS-X ready.
+2026-06-13 03:53:04.098 | INFO     | backend.main:lifespan:48 - Shutting down...
+2026-06-13 03:53:04.098 | INFO     | backend.main:lifespan:48 - Shutting down...
+2026-06-13 03:53:04.099 | INFO     | backend.core.event_bus:stop:18 - Event bus stopped
+2026-06-13 03:53:04.099 | INFO     | backend.core.event_bus:stop:18 - Event bus stopped
+2026-06-13 03:53:04.102 | INFO     | backend.core.mcp.connectors.postgresql:disconnect:48 - PostgreSQL disconnected
+2026-06-13 03:53:04.102 | INFO     | backend.core.mcp.connectors.postgresql:disconnect:48 - PostgreSQL disconnected
+2026-06-13 03:53:24.163 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:53:24.179 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:53:24.179 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:53:24.180 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:53:24.199 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:53:24.214 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:53:24.214 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:53:24.214 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:53:26.460 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:53:26.464 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:53:26.464 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:53:26.489 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:53:26.491 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:53:26.491 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:53:27.693 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:53:27.707 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:53:28.656 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:53:28.656 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:53:28.656 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 03:53:28.656 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 03:53:28.679 | INFO     | backend.core.mcp.connectors.postgresql:connect:27 - PostgreSQL connected successfully
+2026-06-13 03:53:28.680 | INFO     | backend.core.mcp.connectors.local_fs:connect:14 - LocalFS connector ready
+2026-06-13 03:53:28.680 | INFO     | backend.core.mcp.connectors.local_fs:connect:14 - LocalFS connector ready
+2026-06-13 03:53:28.680 | INFO     | backend.core.mcp.mcp_server:connect_all:68 - MCP Server initialized with 2 connectors
+2026-06-13 03:53:28.680 | INFO     | backend.core.mcp.mcp_server:connect_all:68 - MCP Server initialized with 2 connectors
+2026-06-13 03:53:30.957 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:53:30.958 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:53:30.959 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:53:30.959 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:53:30.960 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:53:30.960 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:53:35.541 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+2026-06-13 03:53:35.698 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+2026-06-13 03:53:36.720 | INFO     | backend.core.agents.orchestrator:initialize:51 - Agent orchestrator initialized with 10 agents
+2026-06-13 03:53:36.721 | INFO     | backend.main:lifespan:45 - JARVIS-X ready.
+2026-06-13 03:53:36.834 | INFO     | backend.main:lifespan:48 - Shutting down...
+2026-06-13 03:53:36.835 | INFO     | backend.core.event_bus:stop:18 - Event bus stopped
+2026-06-13 03:53:36.840 | INFO     | backend.core.mcp.connectors.postgresql:disconnect:48 - PostgreSQL disconnected
+2026-06-13 03:53:36.912 | INFO     | backend.core.agents.orchestrator:initialize:51 - Agent orchestrator initialized with 10 agents
+2026-06-13 03:53:36.912 | INFO     | backend.main:lifespan:45 - JARVIS-X ready.
+2026-06-13 03:53:37.019 | INFO     | backend.main:lifespan:48 - Shutting down...
+2026-06-13 03:53:37.019 | INFO     | backend.core.event_bus:stop:18 - Event bus stopped
+2026-06-13 03:53:37.022 | INFO     | backend.core.mcp.connectors.postgresql:disconnect:48 - PostgreSQL disconnected
+2026-06-13 03:53:53.475 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:53:53.505 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:53:53.518 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:53:53.519 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:53:53.519 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:53:53.533 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:53:53.533 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:53:53.533 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:53:55.806 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:53:55.812 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:53:55.813 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:53:55.821 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:53:55.823 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:53:55.823 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:53:58.008 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:53:58.019 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:53:59.154 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:53:59.154 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 03:53:59.156 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:53:59.156 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 03:53:59.202 | INFO     | backend.core.mcp.connectors.postgresql:connect:27 - PostgreSQL connected successfully
+2026-06-13 03:53:59.203 | INFO     | backend.core.mcp.connectors.postgresql:connect:27 - PostgreSQL connected successfully
+2026-06-13 03:53:59.203 | INFO     | backend.core.mcp.connectors.local_fs:connect:14 - LocalFS connector ready
+2026-06-13 03:53:59.204 | INFO     | backend.core.mcp.mcp_server:connect_all:68 - MCP Server initialized with 2 connectors
+2026-06-13 03:53:59.204 | INFO     | backend.core.mcp.connectors.local_fs:connect:14 - LocalFS connector ready
+2026-06-13 03:53:59.204 | INFO     | backend.core.mcp.mcp_server:connect_all:68 - MCP Server initialized with 2 connectors
+2026-06-13 03:54:01.483 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:54:01.491 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:54:01.490 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:54:01.491 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:54:01.497 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:54:01.497 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:54:06.623 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+2026-06-13 03:54:06.635 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+2026-06-13 03:54:08.869 | INFO     | backend.core.agents.orchestrator:initialize:51 - Agent orchestrator initialized with 10 agents
+2026-06-13 03:54:08.869 | INFO     | backend.main:lifespan:45 - JARVIS-X ready.
+2026-06-13 03:54:08.882 | INFO     | backend.core.agents.orchestrator:initialize:51 - Agent orchestrator initialized with 10 agents
+2026-06-13 03:54:08.883 | INFO     | backend.main:lifespan:45 - JARVIS-X ready.
+2026-06-13 03:54:08.973 | INFO     | backend.main:lifespan:48 - Shutting down...
+2026-06-13 03:54:08.973 | INFO     | backend.core.event_bus:stop:18 - Event bus stopped
+2026-06-13 03:54:08.976 | INFO     | backend.core.mcp.connectors.postgresql:disconnect:48 - PostgreSQL disconnected
+2026-06-13 03:54:08.988 | INFO     | backend.main:lifespan:48 - Shutting down...
+2026-06-13 03:54:08.988 | INFO     | backend.core.event_bus:stop:18 - Event bus stopped
+2026-06-13 03:54:08.993 | INFO     | backend.core.mcp.connectors.postgresql:disconnect:48 - PostgreSQL disconnected
+2026-06-13 03:54:37.877 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:54:37.881 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 03:54:37.903 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:54:37.903 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:54:37.903 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:54:37.903 | INFO     | backend.models.database:init_db:30 - MongoDB database initialized
+2026-06-13 03:54:37.904 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 03:54:37.904 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 03:54:40.224 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:54:40.224 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:54:40.229 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:54:40.230 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:54:40.230 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:54:40.231 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:54:42.550 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:54:42.551 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 03:54:43.784 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:54:43.784 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 03:54:43.785 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 03:54:43.785 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 03:54:43.843 | INFO     | backend.core.mcp.connectors.postgresql:connect:27 - PostgreSQL connected successfully
+2026-06-13 03:54:43.843 | INFO     | backend.core.mcp.connectors.local_fs:connect:14 - LocalFS connector ready
+2026-06-13 03:54:43.843 | INFO     | backend.core.mcp.mcp_server:connect_all:68 - MCP Server initialized with 2 connectors
+2026-06-13 03:54:43.846 | INFO     | backend.core.mcp.connectors.postgresql:connect:27 - PostgreSQL connected successfully
+2026-06-13 03:54:43.847 | INFO     | backend.core.mcp.connectors.local_fs:connect:14 - LocalFS connector ready
+2026-06-13 03:54:43.847 | INFO     | backend.core.mcp.mcp_server:connect_all:68 - MCP Server initialized with 2 connectors
+2026-06-13 03:54:46.136 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:54:46.148 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 03:54:46.148 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:54:46.151 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:54:46.159 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 03:54:46.160 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 03:54:51.637 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+2026-06-13 03:54:51.672 | INFO     | backend.core.memory.vector_store:__init__:35 - VectorMemory initialized in persistent mode at C:\Users\Matias\OneDrive\Desktop\JARVIS-X\chroma_data
+2026-06-13 03:54:53.996 | INFO     | backend.core.agents.orchestrator:initialize:51 - Agent orchestrator initialized with 10 agents
+2026-06-13 03:54:53.996 | INFO     | backend.main:lifespan:45 - JARVIS-X ready.
+2026-06-13 03:54:54.008 | INFO     | backend.core.agents.orchestrator:initialize:51 - Agent orchestrator initialized with 10 agents
+2026-06-13 03:54:54.008 | INFO     | backend.main:lifespan:45 - JARVIS-X ready.
+2026-06-13 12:45:16.391 | INFO     | backend.main:lifespan:48 - Shutting down...
+2026-06-13 12:45:16.393 | INFO     | backend.core.event_bus:stop:18 - Event bus stopped
+2026-06-13 12:45:16.395 | INFO     | backend.core.mcp.connectors.postgresql:disconnect:48 - PostgreSQL disconnected
+2026-06-13 12:45:56.807 | INFO     | backend.main:lifespan:48 - Shutting down...
+2026-06-13 12:45:56.810 | INFO     | backend.core.event_bus:stop:18 - Event bus stopped
+2026-06-13 12:45:56.811 | INFO     | backend.core.mcp.connectors.postgresql:disconnect:48 - PostgreSQL disconnected
+2026-06-13 13:23:19.989 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 13:23:50.463 | ERROR    | backend.models.database:init_db:32 - Failed to connect to MongoDB: localhost:27017: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a2d9207582815764c365a07, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-06-13 14:06:42.014 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 14:07:12.482 | ERROR    | backend.models.database:init_db:32 - Failed to connect to MongoDB: localhost:27017: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 6a2d9c3223d73c50da097a5d, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2026-06-13 14:09:23.392 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 14:09:23.477 | INFO     | backend.models.database:init:86 - SQLite database initialized at jarvis.db
+2026-06-13 14:09:23.477 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 14:09:23.477 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 14:09:25.752 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 14:09:25.754 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 14:09:25.755 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 14:09:27.205 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 14:09:28.363 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 14:09:28.363 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 14:09:32.414 | ERROR    | backend.core.mcp.connectors.postgresql:connect:29 - PostgreSQL connection failed: Multiple exceptions: [Errno 10061] Connect call failed ('::1', 5432, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 5432)
+2026-06-13 14:17:21.836 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 14:17:21.837 | INFO     | backend.models.database:init_db:126 - SQLite database initialized at jarvis.db
+2026-06-13 14:17:21.837 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 14:17:21.837 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 14:17:24.171 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 14:17:24.179 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 14:17:24.179 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 14:17:25.345 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 14:17:26.339 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 14:17:26.339 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 14:17:30.424 | ERROR    | backend.core.mcp.connectors.postgresql:connect:29 - PostgreSQL connection failed: Multiple exceptions: [Errno 10061] Connect call failed ('::1', 5432, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 5432)
+2026-06-13 14:37:35.592 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 14:37:35.592 | INFO     | backend.models.database:init_db:126 - SQLite database initialized at jarvis.db
+2026-06-13 14:37:35.592 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 14:37:35.592 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 14:37:37.897 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 14:37:37.912 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 14:37:37.912 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 14:37:39.060 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 14:37:40.041 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 14:37:40.041 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 14:37:44.141 | ERROR    | backend.core.mcp.connectors.postgresql:connect:29 - PostgreSQL connection failed: Multiple exceptions: [Errno 10061] Connect call failed ('::1', 5432, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 5432)
+2026-06-13 14:48:40.974 | INFO     | backend.main:lifespan:28 - Starting JARVIS-X backend...
+2026-06-13 14:48:40.975 | INFO     | backend.models.database:init_db:126 - SQLite database initialized at jarvis.db
+2026-06-13 14:48:40.975 | INFO     | backend.core.task_queue:start:17 - Task queue started with 4 workers
+2026-06-13 14:48:40.975 | INFO     | backend.core.event_bus:start:14 - Event bus started
+2026-06-13 14:48:43.262 | WARNING  | backend.core.llm_providers.ollama:initialize:32 - Model llama3.2:latest not found in Ollama. Pulling...
+2026-06-13 14:48:43.270 | INFO     | backend.core.llm_providers.ollama:initialize:35 - Ollama provider initialized
+2026-06-13 14:48:43.271 | INFO     | backend.core.llm_router:initialize:51 - LLM Router initialized. Primary: ollama
+2026-06-13 14:48:44.691 | INFO     | backend.core.vision.ocr_engine:initialize:14 - OCR Engine initialized
+2026-06-13 14:48:45.816 | INFO     | backend.core.vision.object_detection:initialize:18 - Object detector initialized on cpu
+2026-06-13 14:48:45.816 | INFO     | backend.core.mcp.connectors.postgresql:connect:22 - Connecting to PostgreSQL at localhost:5432...
+2026-06-13 14:48:49.900 | ERROR    | backend.core.mcp.connectors.postgresql:connect:29 - PostgreSQL connection failed: Multiple exceptions: [Errno 10061] Connect call failed ('::1', 5432, 0, 0), [Errno 10061] Connect call failed ('127.0.0.1', 5432)
